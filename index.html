@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d18">
+  <meta name="description" content="Una pequeña sorpresa de cumpleaños.">
+  <title>Para ti ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">UNA PEQUEÑA SORPRESA</p>
+        <h1>Feliz cumpleaños,<br><span>KELLY MARULANDA ANGEL</span> ❤️</h1>
+        <p class="hero-text">Hoy quería regalarte algo diferente: unos minutos para recordar lo especial que eres.</p>
+        <button class="primary-btn" id="startBtn">Abrir mi sorpresa ✨</button>
+      </div>
+      <div class="scroll-hint">desliza hacia abajo ↓</div>
+    </section>
+
+    <section class="letter reveal">
+      <p class="eyebrow">PARA TI</p>
+      <h2>Hay cosas que merecen ser guardadas.</h2>
+      <div class="letter-card">
+        <p>Hoy es un día especial porque celebramos tu vida, tus sueños y todas esas pequeñas cosas que te hacen ser tú.</p>
+        <p>Quería dejarte estas palabras para que, cuando vuelvas a encontrarlas, recuerdes que alguien pensó en ti con muchísimo cariño.</p>
+        <p>Espero que este nuevo año venga lleno de momentos que te hagan sonreír, personas que te quieran bonito y sueños que poco a poco se conviertan en realidad.</p>
+        <p>Mi amor espero que este pequeño detalle te alegre el dia tanto como tu alegras los mios.</p>
+        <p class="signature">Con mucho cariño,<br><strong>Juan Pa ❤️</strong></p>
+      </div>
+    </section>
+
+    <section class="gallery reveal">
+      <p class="eyebrow">NUESTROS RECUERDOS</p>
+      <h2>Algunos momentos que vale la pena recordar.</h2>
+      <div class="photo-grid">
+        <figure class="photo photo-large"><img src="img/foto1.jpg" alt="Recuerdo 1" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Un momento para recordar</figcaption></figure>
+        <figure class="photo"><img src="img/foto2.jpg" alt="Recuerdo 2" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Una sonrisa que lo dice todo</figcaption></figure>
+        <figure class="photo"><img src="img/foto3.jpg" alt="Recuerdo 3" onerror="this.parentElement.classList.add('placeholder')"><figcaption>De esos días que quedan</figcaption></figure>
+        <figure class="photo"><img src="img/foto4.jpg" alt="Recuerdo 4" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Otro recuerdo bonito</figcaption></figure>
+        <figure class="photo"><img src="img/foto5.jpg" alt="Recuerdo 5" onerror="this.parentElement.classList.add('placeholder')"><figcaption>Y muchos más por venir</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="message reveal">
+      <div class="message-inner">
+        <p class="eyebrow">UN ÚLTIMO MENSAJE</p>
+        <h2>Que nunca te falten razones para sonreír.</h2>
+        <p>Gracias por existir, por ser parte de tantos momentos y por hacer que algunos días sean mucho más especiales.</p>
+        <p class="big-heart">♥</p>
+        <button class="surprise-btn" id="surpriseBtn">Tengo algo más para ti 🎁</button>
+        <div class="hidden-message" id="hiddenMessage">
+          <h3>¡Feliz cumpleaños! 🎂</h3>
+          <p>Te mereces todo lo bonito que te pase en la vida Te amo.</p>
+          <p>Todo lo que te propongas lo vas a lograr porque tienes la fuerza para hacerlo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="music-btn" id="musicBtn" aria-label="Activar música">♫</button>
+  <audio id="music" loop preload="none">
+    <source src="audio/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
